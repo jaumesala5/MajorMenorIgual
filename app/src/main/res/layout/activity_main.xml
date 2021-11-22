@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MajorMenorIgual"
+        android:padding="10sp"
+        android:textSize="30sp"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorBlue"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <GridLayout
+            android:id="@+id/monos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </GridLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <GridLayout
+            android:id="@+id/lleo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </GridLayout>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp">
+        <ImageView
+            android:id="@+id/menor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/menor">
+        </ImageView>
+        <ImageView
+            android:id="@+id/igual"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/igual">
+        </ImageView>
+        <ImageView
+            android:id="@+id/major"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/major">
+        </ImageView>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Menor">
+        </TextView>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Igual">
+        </TextView>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mejor">
+        </TextView>
+    </GridLayout>
+
+
+</LinearLayout>
