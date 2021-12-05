@@ -2,6 +2,7 @@ package cat.dam.jaume.majormenorigual;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 import  java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    TextView resu;
+    TextView resu,cont;
     ImageButton igual,major,menor;
 
 
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(numA == numB){
+
                     resu.setText("Correcte!");
                 }else {resu.setText("Incorrecte");}
             }
